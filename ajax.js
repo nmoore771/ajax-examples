@@ -6,3 +6,12 @@ function request1 () {
             console.log(data);
         })
 }
+
+function request2 () {
+    let word = document.querySelector("#wordbox").value;
+    fetch("https://api.dictionaryapi.dev/api/v2/entries/en/" + word)
+        .then(resp => resp.json())
+        .then(data => {
+            console.log(data);
+        })
+}
