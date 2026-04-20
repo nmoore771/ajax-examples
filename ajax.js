@@ -7,6 +7,7 @@ function request1 () {
         })
 }
 
+
 function request2 () {
     let word = document.querySelector("#wordbox").value;
     fetch("https://api.dictionaryapi.dev/api/v2/entries/en/" + word)
