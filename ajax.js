@@ -8,7 +8,7 @@ function request1 () {
 }
 
 // Asynchronous Communication is Asynchronous!  This does not always return values in the order you expect! 
-fucnction request2 () {
+function request2 () {
     fetch("hello.txt")
       .then(resp => resp.text())
       .then(data => console.log(data));
